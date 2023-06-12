@@ -4,7 +4,7 @@ import Form from "@/components/Form";
 export default function Page() {
   return (
     <div className="bg-[#EFF2F7] overflow-x-hidden pt-[90px] h-screen w-screen md:flex md:justify-center md:items-center xl:flex xl:justify-center xl:items-center">
-      <div className="h-auto w-full bg-white rounded-xl shadow-md p-6 grid grid-cols-1 md:grid-cols-2 md:h-auto md:w-2/3 xl:grid-cols-2 xl:h-auto xl:w-2/3">
+      <div className="h-auto w-full bg-white rounded-xl shadow-md p-6 grid grid-cols-1 md:grid-cols-2 md:h-auto md:w-[95%] xl:grid-cols-2 xl:h-auto xl:w-2/3">
         <div className="relative flex flex-col items-center md:border-r-2 xl:border-r-2">
           <img
             className="h-32 w-32 rounded-full absolute top-[-90px]"

@@ -13,6 +13,9 @@ const schema = yup
       .email("Please type a valid email.")
       .required("You must type your email."),
     description: yup.string().min(10, "Minimum 10 characters, please."),
+    tos: yup
+      .boolean()
+      .oneOf([true], "You must agree to the terms and conditions."),
     budget: yup
       .number()
       .typeError("Please type your budget.")
@@ -73,9 +76,22 @@ export default function Form() {
           />
           <ErrorMessage>{errors.budget?.message}</ErrorMessage>
         </div>
+        <div>
+          <div className="flex gap-2 items-center">
+            <input
+              {...register("tos", { required: true })}
+              id="checkbox"
+              type="checkbox"
+            />
+            <label htmlFor="checkbox">
+              I agree to the terms and conditions.
+            </label>
+          </div>
+          <ErrorMessage>{errors.tos?.message}</ErrorMessage>
+        </div>
         <Button type="submit">Hire Now</Button>
       </form>
-      <p className="mt-6 text-gray-500 flex items-center gap-2">
+      <p className="mt-6 text-gray-500 flex items-center gap-2 text-left">
         <Info size={15} />
         You&apos;ll be redirected to the payment page.
       </p>

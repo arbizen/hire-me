@@ -5,6 +5,7 @@ import { Info } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Link from "next/link";
 
 const schema = yup
   .object({
@@ -84,7 +85,11 @@ export default function Form() {
               type="checkbox"
             />
             <label htmlFor="checkbox">
-              I agree to the terms and conditions.
+              I agree to the{" "}
+              <Link href="/tos">
+                <span className="underline">terms and conditions</span>
+              </Link>
+              .
             </label>
           </div>
           <ErrorMessage>{errors.tos?.message}</ErrorMessage>

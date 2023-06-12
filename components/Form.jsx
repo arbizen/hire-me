@@ -81,7 +81,7 @@ export default function Form() {
       </form>
       <p className="mt-6 text-gray-500 flex items-center gap-2">
         <Info size={15} />
-        You'll be redirected to the payment page.
+        You&apos;ll be redirected to the payment page.
       </p>
     </>
   );

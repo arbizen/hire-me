@@ -32,11 +32,6 @@ export default function Form() {
     handleSubmit,
   } = useForm({
     resolver: yupResolver(schema),
-    defaultValues: {
-      email: "",
-      description: "",
-      budget: 0,
-    },
   });
 
   const onSubmit = (data) => console.log(data);

@@ -15,6 +15,7 @@ const schema = yup
     description: yup.string().min(10, "Minimum 10 characters, please."),
     budget: yup
       .number()
+      .typeError("Please type your budget.")
       .required("Please type your budget")
       .min(50, "Budget must be $50 or more."),
   })

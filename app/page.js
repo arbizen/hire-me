@@ -1,6 +1,5 @@
-import Input from "@/components/Input";
-import Button from "@/components/Button";
 import { Link } from "lucide-react";
+import Form from "@/components/Form";
 
 export default function Page() {
   return (
@@ -63,16 +62,7 @@ export default function Page() {
           </div>
         </div>
         <div className="p-6 border-t-2 md:border-0 xl:flex xl:flex-col xl:pl-10 xl:items-center xl:border-0">
-          <form className="space-y-6 w-full">
-            <Input placeholder="me@example.com" type="input" label="Email" />
-            <Input
-              placeholder="I need a landing page designed for my grocery shop..."
-              type="textarea"
-              label="Describe your project"
-            />
-            <Input placeholder="$1000" type="input" label="Budget" />
-            <Button>Hire Now</Button>
-          </form>
+          <Form />
         </div>
       </div>
     </div>

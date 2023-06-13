@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Link from "next/link";
 import { checkout } from "@/lib/checkout";
+import { useRouter } from "next/navigation";
 
 const schema = yup
   .object({
@@ -31,6 +32,7 @@ export const ErrorMessage = ({ children }) => {
 };
 
 export default function Form() {
+  const router = useRouter();
   const {
     register,
     formState: { errors },
@@ -39,9 +41,10 @@ export default function Form() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     // do the checkout
-    checkout(data?.budget);
+    const checkoutData = await checkout(data?.budget);
+    router.push(checkoutData?.url);
   }
 
   return (

@@ -1,7 +1,7 @@
 export default function Button({ children, ...rest }) {
   return (
     <button
-      className="block bg-[#3D13FF] py-2 px-6 rounded-md mx-auto text-white"
+      className="flex justify-center items-center gap-2 bg-[#3D13FF] py-2 px-6 rounded-md mx-auto text-white"
       {...rest}
     >
       {children}

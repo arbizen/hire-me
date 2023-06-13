@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 export default function Success() {
   const params = useSearchParams();

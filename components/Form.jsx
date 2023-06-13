@@ -1,13 +1,14 @@
 "use client";
 import Input from "@/components/Input";
 import Button from "@/components/Button";
-import { Info } from "lucide-react";
+import { Info, LoaderIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Link from "next/link";
 import { checkout } from "@/lib/checkout";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const schema = yup
   .object({
@@ -33,6 +34,7 @@ export const ErrorMessage = ({ children }) => {
 
 export default function Form() {
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     formState: { errors },
@@ -43,7 +45,9 @@ export default function Form() {
 
   const onSubmit = async (data) => {
     // do the checkout
+    setIsLoading(true);
     const checkoutData = await checkout(data?.budget);
+    setIsLoading(false);
     router.push(checkoutData?.url);
   }
 
@@ -101,7 +105,12 @@ export default function Form() {
           </div>
           <ErrorMessage>{errors.tos?.message}</ErrorMessage>
         </div>
-        <Button type="submit">Hire Now</Button>
+        <Button type="submit">
+          {!isLoading ? "Hire Now" : <>
+          <LoaderIcon size={15} className="animate-spin" />
+          Loading...
+          </>}
+        </Button>
       </form>
       <p className="mt-6 text-gray-500 flex items-center gap-2 text-left">
         <Info size={15} />

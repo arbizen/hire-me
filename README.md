@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://hire.arbizen.com">
+  <img alt="Hire Me - An open source hire me widget for freelancers." src=""/> 
+  <h1 align="center">Hire Me</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  An open source `hire me` widget to get your clients right into your bucket. Made & specialized for freelancers!
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="#introduction"><strong>Intro</strong></a> ·
+  <a href="#tech-stack"><strong>Stack</strong></a> ·
+  <a href="#contributing"><strong>Contribute</strong></a>
+</p>
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hire Me is an open-source widget to get your clients right into your bucket. Built with [NextJs](https://nextjs.org), and [Stripe](https://stripe.com).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js 13 (with /app directory)](https://nextjs.org/) – framework
+- [JavaScript](https://www.typescriptlang.org/) – language
+- [Tailwind](https://tailwindcss.com/) – CSS
+- [Vercel](https://vercel.com/) – hosting
+- [Stripe](https://stripe.com)
+- [React Hook Form](https://react-hook-form.com)
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone this repo
+2. `cd hire-me`
+3. Create .env.local (see env.example)
+4. Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY & STRIPE_SECRET_KEY in `.env.local`
+5. Run `npm install`
+6. Run `npm run dev`
+7. Happy coding 🎉
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribute
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Want to contribute? Spot on:
 
-## Deploy on Vercel
+- [Open an issue](https://github.com/arbizen/hire-me/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/arbizen/hire-me/pull) to add new features/make quality-of-life improvements/fix bugs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Arb ([@arbizzen](https://twitter.com/arbizzen))
+
+## License
+
+Hire Me is open-source under the GNU Affero General Public License Version 3 (AGPLv3) or any later version. You can [find it here](https://github.com/arbizen/hire-me/blob/main/LICENSE).

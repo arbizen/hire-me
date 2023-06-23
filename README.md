@@ -16,7 +16,7 @@
 
 ## Introduction
 
-Hire Me is an open-source widget to get your clients right into your bucket. Built with [NextJs](https://nextjs.org), and [Stripe](https://stripe.com).
+Hire Me is an open-source widget to get your clients right into your bucket. Built with [NextJs](https://nextjs.org), and [Stripe](https://stripe.com). Clone the repo and easily make your own version.
 
 ## Tech Stack
 
@@ -24,15 +24,15 @@ Hire Me is an open-source widget to get your clients right into your bucket. Bui
 - [JavaScript](https://www.typescriptlang.org/) – language
 - [Tailwind](https://tailwindcss.com/) – CSS
 - [Vercel](https://vercel.com/) – hosting
-- [Stripe](https://stripe.com)
-- [React Hook Form](https://react-hook-form.com)
+- [Stripe](https://stripe.com) – payment
+- [React Hook Form](https://react-hook-form.com) – validation
 
 ## Development
 
 1. Clone this repo
 2. `cd hire-me`
 3. Create .env.local (see env.example)
-4. Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY & STRIPE_SECRET_KEY in `.env.local`
+4. Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`
 5. Run `npm install`
 6. Run `npm run dev`
 7. Happy coding 🎉

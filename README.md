@@ -16,7 +16,9 @@
 
 ## Introduction
 
-Hire Me is an open-source widget to get your clients right into your bucket. Built with [NextJs](https://nextjs.org), and [Stripe](https://stripe.com). Clone the repo and easily make your own version.<br/>Stripe is in test mode. Thus you can use the following card information to make a payment:<br/>
+Hire Me is an open-source widget to get your clients right into your bucket. Built with [NextJs](https://nextjs.org), and [Stripe](https://stripe.com). Clone the repo and easily make your own version.
+
+Stripe is in test mode. Thus you can use the following card information to make a payment:
 
 - Card Number: 4242424242424242
 - Expiry date: Any future date

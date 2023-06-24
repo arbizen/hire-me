@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://hire.arbizen.com" target="_blank"><strong>Demo</strong></a> ·
   <a href="#introduction"><strong>Intro</strong></a> ·
   <a href="#tech-stack"><strong>Stack</strong></a> ·
   <a href="#contribute"><strong>Contribute</strong></a>
@@ -37,7 +38,7 @@ Stripe is in test mode. Thus you can use the following card information to make 
 
 ## Development
 
-1. Clone this repo
+1. Clone the repo - `git clone https://github.com/arbizen/hire-me.git`
 2. `cd hire-me`
 3. Create .env.local (see env.example)
 4. Set STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`

@@ -39,8 +39,8 @@ Stripe is in test mode. Thus you can use the following card information to make 
 ## Development
 
 1. Clone the repo - `git clone https://github.com/arbizen/hire-me.git`
-2. `cd hire-me`
-3. Create .env.local (see env.example)
+2. Enter into the new directory - `cd hire-me`
+3. Create .env.local - `touch .env.local` (see .env.example)
 4. Set STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`
 5. Run `npm install`
 6. Run `npm run dev`

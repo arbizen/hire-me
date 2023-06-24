@@ -57,6 +57,9 @@ export default function InfoTemplate() {
               <p>
                 <b className="text-sm">CVC</b>: Any 3 digits
               </p>
+              <p className="mt-2 max-w-[280px]">
+                An email will be sent after successful payment!
+              </p>
             </div>
           </div>
         </div>

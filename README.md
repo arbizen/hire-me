@@ -1,5 +1,5 @@
 <a href="https://hire.arbizen.com">
-  <img alt="Hire Me - An open source hire me widget for freelancers." src="/public/hire-me-demo.png"/> 
+  <img alt="Hire Me - An open source hire me widget for freelancers." src="/public/demo.png"/> 
   <h1 align="center">Hire Me</h1>
 </a>
 
@@ -10,7 +10,7 @@
 <p align="center">
   <a href="#introduction"><strong>Intro</strong></a> ·
   <a href="#tech-stack"><strong>Stack</strong></a> ·
-  <a href="#contributing"><strong>Contribute</strong></a>
+  <a href="#contribute"><strong>Contribute</strong></a>
 </p>
 <br/>
 
@@ -32,14 +32,15 @@ Stripe is in test mode. Thus you can use the following card information to make 
 - [Tailwind](https://tailwindcss.com/) – CSS
 - [Vercel](https://vercel.com/) – hosting
 - [Stripe](https://stripe.com) – payment
-- [React Hook Form](https://react-hook-form.com) – validation
+- [React Hook Form](https://react-hook-form.com) – form handling
+- [Zod](https://zod.dev) – form validation
 
 ## Development
 
 1. Clone this repo
 2. `cd hire-me`
 3. Create .env.local (see env.example)
-4. Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY, STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`
+4. Set STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`
 5. Run `npm install`
 6. Run `npm run dev`
 7. Happy coding 🎉

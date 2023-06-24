@@ -1,5 +1,5 @@
 <a href="https://hire.arbizen.com">
-  <img alt="Hire Me - An open source hire me widget for freelancers." src="/public/demo.png"/> 
+  <img alt="Hire Me - An open source hire me widget for freelancers." src="/public/canva-demo.png"/> 
   <h1 align="center">Hire Me</h1>
 </a>
 

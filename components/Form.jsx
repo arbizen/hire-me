@@ -46,10 +46,10 @@ export default function Form() {
   const onSubmit = async (data) => {
     // do the checkout
     setIsLoading(true);
-    const checkoutData = await checkout(data?.budget);
+    const checkoutData = await checkout(data);
     setIsLoading(false);
     router.push(checkoutData?.url);
-  }
+  };
 
   return (
     <>
@@ -106,10 +106,14 @@ export default function Form() {
           <ErrorMessage>{errors.tos?.message}</ErrorMessage>
         </div>
         <Button type="submit">
-          {!isLoading ? "Hire Now" : <>
-          <LoaderIcon size={15} className="animate-spin" />
-          Loading...
-          </>}
+          {!isLoading ? (
+            "Hire Now"
+          ) : (
+            <>
+              <LoaderIcon size={15} className="animate-spin" />
+              Loading...
+            </>
+          )}
         </Button>
       </form>
       <p className="mt-6 text-gray-500 flex items-center gap-2 text-left">

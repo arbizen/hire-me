@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply bg-[#EFF2F7] overflow-x-hidden pt-[90px] h-screen w-screen 2xl:flex 2xl:justify-center 2xl:items-center;
+  }
+  .card {
+    @apply h-auto w-full bg-white rounded-xl shadow-md p-6 grid grid-cols-1 md:m-auto md:mb-12 md:grid-cols-2 md:h-auto md:w-[95%] 2xl:m-0 2xl:grid-cols-2 2xl:h-auto xl:w-2/3;
+  }
+  .info-container {
+    @apply relative flex flex-col items-center md:border-r-2 xl:border-r-2;
+  }
+  .form-container {
+    @apply p-6 border-t-2 md:border-0 xl:flex xl:flex-col xl:pl-10 xl:items-center xl:border-0;
+  }
+}

@@ -1,6 +1,10 @@
 export const siteConfig = {
   name: "Arb Rahim Badsa",
   avatarUrl: "https://avatars.githubusercontent.com/u/34975329",
+  email: "arbrahimbadsa@gmail.com",
+  // admin email is used to send email to both parties.
+  // you must add your domain to "resend" before setting it here
+  adminEmail: "admin@hire.arbizen.com",
   oneLiner: "I craft designs and make unicorns.",
   portfolio: "http://arbizen.com",
   skills: ["#ReactJs", "#NextJS", "#NodeJS", "#JavaScript"],

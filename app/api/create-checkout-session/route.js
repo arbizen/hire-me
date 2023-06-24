@@ -1,15 +1,18 @@
 import { Stripe } from "stripe";
 import { NextResponse } from "next/server";
 import { stripeInfo } from "@/utils/stripe";
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+import { stripe } from "@/lib/stripe";
 
 // generate the checkout session
 export async function POST(req) {
   const data = await req.json();
   const budget = data?.budget || 50;
   const session = await stripe.checkout.sessions.create({
-    success_url: `${process.env.HOST}${stripeInfo.successRoute}?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${process.env.HOST}${
+      stripeInfo.successRoute
+    }?session_id={CHECKOUT_SESSION_ID}&email=${
+      data?.email
+    }&description=${encodeURIComponent(data?.description)}`,
     cancel_url: `${process.env.HOST}${stripeInfo.cancelRoute}`,
     mode: "payment",
     line_items: [

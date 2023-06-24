@@ -35,13 +35,15 @@ Stripe is in test mode. Thus you can use the following card information to make 
 - [Stripe](https://stripe.com) – payment
 - [React Hook Form](https://react-hook-form.com) – form handling
 - [Zod](https://zod.dev) – form validation
+- [React Email](https://react.email) – email template
+- [Resend](https://resend.com/) – email transporter
 
 ## Development
 
 1. Clone the repo - `git clone https://github.com/arbizen/hire-me.git`
 2. Enter into the new directory - `cd hire-me`
 3. Create .env.local - `touch .env.local` (see .env.example)
-4. Set STRIPE_SECRET_KEY & HOST (Change it to the production url in production) in `.env.local`
+4. Set STRIPE_SECRET_KEY, RESEND_API_KEY & HOST (Change it to the production url in production) in `.env.local`
 5. Run `npm install`
 6. Run `npm run dev`
 7. Happy coding 🎉
